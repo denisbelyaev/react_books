@@ -1,32 +1,37 @@
 import 'isomorphic-fetch';
-
-const API_BASE_URL = 'http://127.0.0.1:8000';
-const PROXY_ROOT = '/api/v1';
-
-const queryString = (params) => {
-    return '?' + Object.keys(params).map((key) =>
-            [key, params[key]].join('=')
-        ).join('&');
-}
+import {find as __find} from 'lodash'
+import data from './books.json';
 
 const callApi = (options) => {
-    // body, method, headers
-    var {url, params} = options;
+  var response;
+  var {url, id} = options;
 
-    var requestUrl = API_BASE_URL + PROXY_ROOT + url;
-    if(params) {
-        requestUrl += queryString(options.params);
-    }
-    // headers['Accept'] = 'application/json';
-    // headers['Content-Type'] = 'application/json';
-    console.log("------------------------------- callApi with options", options)
-
-    return Promise.resolve(options.body)
-        .then(response => {
-            return response;
-        })
-    // return fetch(requestUrl, {...options, headers})
-    //     .then(response => response.json())
+  switch (url) {
+    case '/books':
+      response = {
+        success: true,
+        result: data.books
+      };
+      break;
+    case '/authors':
+      response = {
+        success: true,
+        result: data.authors
+      };
+      break;
+    case '/genre':
+      response = {
+        success: true,
+        result: __find(data.genres, {'id': id})
+      };
+      break;
+    default:
+      response = {};
+  }
+  return Promise.resolve(response)
+    .then(response => {
+      return response;
+    })
 };
 
 export default callApi;

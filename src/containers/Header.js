@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { Link } from 'react-router-dom'
-import logo from './logo.svg';
 import './App.css';
-import * as userActions from '../redux/modules/users/actions';
+import * as userActions from '../redux/modules/authors/actions';
 const { addUser } = userActions.sagaActions;
 
 class Header extends Component {
@@ -11,11 +10,8 @@ class Header extends Component {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-            <Link to="/">Welcome</Link>
-            <Link to="/settings">Settings</Link>
-            <button onClick={() => {this.props.addUser({name: "Vasya"})}}>saga</button>
+            <Link to="/" className="header-link">Books</Link>
+            <Link to="/authors" className="header-link">Authors</Link>
         </div>
       </div>
     );

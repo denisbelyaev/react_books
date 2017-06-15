@@ -1,10 +1,14 @@
-import { fork } from 'redux-saga/effects';
+import {fork} from 'redux-saga/effects';
 
-import userSaga from './modules/users/saga';
+import booksSaga from './modules/books/saga';
+import authorsSaga from './modules/authors/saga';
+import ganresSaga from './modules/genres/saga';
 
 //Composing Sagas
 export default function* sagas() {
-    yield [
-        fork(userSaga),
-    ];
+  yield [
+    fork(booksSaga),
+    fork(authorsSaga),
+    fork(ganresSaga)
+  ];
 }

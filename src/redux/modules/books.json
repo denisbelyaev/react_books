@@ -1,0 +1,235 @@
+{
+  "books": [
+    {
+      "id": "1",
+      "title": "book_1",
+      "authors": [
+        {
+          "id": "1",
+          "firstName": "firstNameAuthor_1",
+          "lastName": "lastNameAuthor_1",
+          "biography": "biographyAuthor_1"
+        },
+        {
+          "id": "2",
+          "firstName": "firstNameAuthor_2",
+          "lastName": "lastNameAuthor_2",
+          "biography": "biographyAuthor_2"
+        }
+      ],
+      "description": "descriptionBook_1",
+      "genres": [
+        {
+          "id": "2",
+          "name": "drama"
+        },
+        {
+          "id": "3",
+          "name": "fantasy"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "title": "book_2",
+      "authors": [
+        {
+          "id": "2",
+          "firstName": "firstNameAuthor_2",
+          "lastName": "lastNameAuthor_2",
+          "biography": "biographyAuthor_2"
+        }
+      ],
+      "description": "descriptionBook_2",
+      "genres": [
+        {
+          "id": "1",
+          "name": "comedy"
+        },
+        {
+          "id": "3",
+          "name": "fantasy"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "title": "book_3",
+      "authors": [
+        {
+          "id": "2",
+          "firstName": "firstNameAuthor_2",
+          "lastName": "lastNameAuthor_2",
+          "biography": "biographyAuthor_2"
+        },
+        {
+          "id": "3",
+          "firstName": "firstNameAuthor_3",
+          "lastName": "lastNameAuthor_3",
+          "biography": "biographyAuthor_3"
+        }
+      ],
+      "description": "descriptionBook_3",
+      "genres": [
+        {
+          "id": "1",
+          "name": "comedy"
+        }
+      ]
+    }
+  ],
+  "authors": [
+    {
+      "id": "1",
+      "firstName": "firstNameAuthor_1",
+      "lastName": "lastNameAuthor_1",
+      "biography": "biographyAuthor_1",
+      "books": [
+        {
+          "id": "1",
+          "title": "book_1",
+          "description": "descriptionBook_1"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "firstName": "firstNameAuthor_2",
+      "lastName": "lastNameAuthor_2",
+      "biography": "biographyAuthor_2",
+      "books": [
+        {
+          "id": "1",
+          "title": "book_1",
+          "description": "descriptionBook_1"
+        },
+        {
+          "id": "2",
+          "title": "book_2",
+          "description": "descriptionBook_2"
+        },
+        {
+          "id": "3",
+          "title": "book_3",
+          "description": "descriptionBook_3"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "firstName": "firstNameAuthor_3",
+      "lastName": "lastNameAuthor_3",
+      "biography": "biographyAuthor_3",
+      "books": [
+        {
+          "id": "3",
+          "title": "book_3",
+          "description": "descriptionBook_3"
+        }
+      ]
+    }
+  ],
+  "genres": [
+    {
+      "id": "1",
+      "name": "comedy",
+      "books": [
+        {
+          "id": "2",
+          "title": "book_2",
+          "authors": [
+            {
+              "id": "2",
+              "firstName": "firstNameAuthor_2",
+              "lastName": "lastNameAuthor_2",
+              "biography": "biographyAuthor_2"
+            }
+          ],
+          "description": "descriptionBook_2"
+        },
+        {
+          "id": "3",
+          "title": "book_3",
+          "authors": [
+            {
+              "id": "2",
+              "firstName": "firstNameAuthor_2",
+              "lastName": "lastNameAuthor_2",
+              "biography": "biographyAuthor_2"
+            },
+            {
+              "id": "3",
+              "firstName": "firstNameAuthor_3",
+              "lastName": "lastNameAuthor_3",
+              "biography": "biographyAuthor_3"
+            }
+          ],
+          "description": "descriptionBook_3"
+        }
+      ]
+    },
+    {
+      "id": "2",
+      "name": "drama",
+      "books": [
+        {
+          "id": "1",
+          "title": "book_1",
+          "authors": [
+            {
+              "id": "1",
+              "firstName": "firstNameAuthor_1",
+              "lastName": "lastNameAuthor_1",
+              "biography": "biographyAuthor_1"
+            },
+            {
+              "id": "2",
+              "firstName": "firstNameAuthor_2",
+              "lastName": "lastNameAuthor_2",
+              "biography": "biographyAuthor_2"
+            }
+          ],
+          "description": "descriptionBook_1"
+        }
+      ]
+    },
+    {
+      "id": "3",
+      "name": "fantasy",
+      "books": [
+        {
+          "id": "1",
+          "title": "book_1",
+          "authors": [
+            {
+              "id": "1",
+              "firstName": "firstNameAuthor_1",
+              "lastName": "lastNameAuthor_1",
+              "biography": "biographyAuthor_1"
+            },
+            {
+              "id": "2",
+              "firstName": "firstNameAuthor_2",
+              "lastName": "lastNameAuthor_2",
+              "biography": "biographyAuthor_2"
+            }
+          ],
+          "description": "descriptionBook_1"
+        },
+        {
+          "id": "2",
+          "title": "book_2",
+          "authors": [
+            {
+              "id": "2",
+              "firstName": "firstNameAuthor_2",
+              "lastName": "lastNameAuthor_2",
+              "biography": "biographyAuthor_2"
+            }
+          ],
+          "description": "descriptionBook_2"
+        }
+      ]
+    }
+  ]
+}

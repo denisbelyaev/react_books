@@ -3,22 +3,43 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "classnames": "^2.2.5",
     "isomorphic-fetch": "^2.2.1",
+    "jed": "^1.1.1",
+    "lodash": "^4.17.4",
+    "moment": "^2.17.1",
+    "normalizr": "^3.2.2",
+    "prop-types": "^15.5.8",
+    "rc-slider": "^7.0.3",
     "react": "^15.5.4",
+    "react-addons-shallow-compare": "^15.5.2",
+    "react-autosuggest": "^9.0.1",
+    "react-click-outside": "^2.3.0",
+    "react-dates": "^11.0.1",
     "react-dom": "^15.5.4",
+    "react-modal": "^1.7.7",
+    "react-page-click": "^4.0.0",
     "react-redux": "^5.0.4",
     "react-router": "^4.1.1",
     "react-router-dom": "^4.1.1",
+    "react-spinkit": "^2.1.2",
+    "react-sticky": "^6.0.1",
     "redux": "^3.6.0",
-    "redux-saga": "^0.15.0"
+    "redux-form": "^6.6.3",
+    "redux-saga": "^0.15.0",
+    "reselect": "^3.0.0",
+    "superagent": "^3.5.2"
   },
   "devDependencies": {
-    "react-scripts": "0.9.5"
+    "react-scripts": "0.9.5",
+    "@kadira/storybook": "^2.21.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "storybook": "start-storybook -p 9009 -s public",
+    "build-storybook": "build-storybook -s public"
   }
 }
